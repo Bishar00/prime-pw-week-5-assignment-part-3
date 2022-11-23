@@ -19,7 +19,14 @@ function addToCollection (title,artist,yearPublished){
 //   - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
 //   - Console.log each album as added using the returned value.
 //   - After all are added, console.log the `collection` array.
+addToCollection('get rich or die trying','50 cent', 2005)
+addToCollection('The Massacre','50 cent',2005)
+addToCollection('The voice','Lil durk',2020)
+addToCollection('Before you go','Blsxt', 2022)
+addToCollection('Made in Lagos','Wizkid', 2022)
+addToCollection('African gaint','Burna', 2019)
 
+console.log(collection)
 
 // - Add a function named `showCollection`. This function should:
 //   - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
