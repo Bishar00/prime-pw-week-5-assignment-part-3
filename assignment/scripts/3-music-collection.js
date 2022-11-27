@@ -32,7 +32,14 @@ console.log(collection)
 //   - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
 //   - Console.log the number of items in the array.
 //   - Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
-
+function showCollection(collection){
+    for(let i=0;i < collection.length; i++)
+        console.log("TITLE by ARTIST " + collection[i].title + " published in YEAR " + collection[i].yearPublished)
+    
+    }
+    
+    showCollection(collection);
+    console.log(collection.length);
 
 
 // - Test the `showCollection` function.
@@ -42,3 +49,20 @@ console.log(collection)
 //   - Create an array to hold any results, empty to start
 //   - Loop through the `collection` and add any objects with a matching artist to the array.
 //   - Return the array with the matching results. If no results are found, return an empty array.
+function findByartist(artist){
+    resultsarray= []
+   for(let i=0;i < collection.length; i++){
+    
+   if(artist === collection[i].artist){
+   resultsarray.push(collection[i])
+   }
+   }
+    console.log(resultsarray);
+  }
+  
+  findByartist('50 cent');
+  findByartist('Lil durk');
+  findByartist("Blsxt");
+  findByartist ("drake");
+
+
